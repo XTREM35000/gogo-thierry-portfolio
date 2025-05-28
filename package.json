@@ -41,6 +41,7 @@
     "@vitejs/plugin-react": "^4.5.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.15.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.323.0",
@@ -56,6 +57,7 @@
     "sonner": "^2.0.3",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
+    "vaul": "^1.1.2",
     "vite": "^6.3.5",
     "zod": "^3.24.4"
   },
