@@ -53,7 +53,10 @@ export default function ExperiencesEditor() {
       const data = await getExperiences();
       setExperiences(data);
     } catch (error) {
-      toast('Erreur', 'Impossible de charger les expériences');
+      toast({
+        title: 'Erreur',
+        description: 'Impossible de charger les expériences'
+      });
     } finally {
       setIsLoading(false);
     }
@@ -88,9 +91,15 @@ export default function ExperiencesEditor() {
       try {
         await deleteExperience(id);
         setExperiences(experiences.filter(exp => exp.id !== id));
-        toast('Expérience supprimée', 'L\'expérience a été supprimée avec succès');
+        toast({
+          title: 'Expérience supprimée',
+          description: 'L\'expérience a été supprimée avec succès'
+        });
       } catch (error) {
-        toast('Erreur', 'Impossible de supprimer l\'expérience');
+        toast({
+          title: 'Erreur',
+          description: 'Impossible de supprimer l\'expérience'
+        });
       }
     }
   }
@@ -103,18 +112,27 @@ export default function ExperiencesEditor() {
         // Update existing experience
         const updated = await updateExperience(values.id, values);
         setExperiences(experiences.map(exp => (exp.id === values.id ? updated : exp)));
-        toast('Expérience mise à jour', 'Les modifications ont été enregistrées avec succès');
+        toast({
+          title: 'Expérience mise à jour',
+          description: 'Les modifications ont été enregistrées avec succès'
+        });
       } else {
         // Create new experience
         const created = await createExperience(values);
         setExperiences([...experiences, created]);
-        toast('Expérience ajoutée', 'La nouvelle expérience a été ajoutée avec succès');
+        toast({
+          title: 'Expérience ajoutée',
+          description: 'La nouvelle expérience a été ajoutée avec succès'
+        });
       }
 
       setIsEditing(false);
       form.reset();
     } catch (error) {
-      toast('Erreur', 'Une erreur est survenue lors de la sauvegarde');
+      toast({
+        title: 'Erreur',
+        description: 'Une erreur est survenue lors de la sauvegarde'
+      });
     } finally {
       setIsSaving(false);
     }
