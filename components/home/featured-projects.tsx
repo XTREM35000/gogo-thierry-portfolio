@@ -44,7 +44,7 @@ const featuredProjects = [
   {
     title: 'Plateforme E-learning',
     description: 'Une plateforme de Gestion simplifiée',
-    image: '/images/projets/folio04.png',
+    image: '/images/projets/auto03.png',
     tags: ['Next.js', 'TypeScript', 'PostgreSQL'],
     githubUrl: 'https://github.com/votre-username/project2',
     liveUrl: 'https://project2.com'
@@ -52,7 +52,7 @@ const featuredProjects = [
   {
     title: 'Application Grid',
     description: 'Une compile de Starter pour vos projets',
-    image: '/images/projets/folio05.png',
+    image: '/images/projets/auto01.png',
     tags: ['React Native', 'Firebase', 'Redux'],
     githubUrl: 'https://github.com/votre-username/project3',
     liveUrl: 'https://project3.com'
