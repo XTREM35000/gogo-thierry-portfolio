@@ -13,11 +13,11 @@ export const getProfile = cache(async (): Promise<Profile> => {
     console.error('Error fetching profile:', error);
     // Return a default profile if none exists
     return {
-      name: 'John Doe',
+      name: 'Gogo Dibo Marcel Thierry',
       title: 'Développeur Fullstack',
-      email: 'contact@example.com',
-      github: 'johndoe',
-      photo_url: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
+      email: 'sieur.thierry.gogo@gmail.com',
+      github: 'xtrem35',
+      photo_url: '/images/profile/profile01.png',
     };
   }
 

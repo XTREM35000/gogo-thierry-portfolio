@@ -11,24 +11,48 @@ import { ExternalLink, Github } from 'lucide-react';
 const featuredProjects = [
   {
     title: 'Application de Gestion',
-    description: 'Une application web complète pour la gestion des ressources et des tâches.',
-    image: '/images/projects/project1.jpg',
+    description: "Une application web complète pour la gestion d'établissements scolaires.",
+    image: '/images/projets/edu01.png',
     tags: ['React', 'Node.js', 'MongoDB'],
     githubUrl: 'https://github.com/votre-username/project1',
     liveUrl: 'https://project1.com'
   },
   {
     title: 'Plateforme E-learning',
-    description: 'Une plateforme d\'apprentissage en ligne avec des cours interactifs.',
-    image: '/images/projects/project2.jpg',
+    description: 'Une plateforme de Gestion de bus et Cantines Scolaires',
+    image: '/images/projets/edu04.png',
     tags: ['Next.js', 'TypeScript', 'PostgreSQL'],
     githubUrl: 'https://github.com/votre-username/project2',
     liveUrl: 'https://project2.com'
   },
   {
-    title: 'Application Mobile',
-    description: 'Une application mobile de suivi de fitness et nutrition.',
-    image: '/images/projects/project3.jpg',
+    title: 'Application Starter',
+    description: 'Une compile de Starter pour vos projets',
+    image: '/images/projets/edu05.png',
+    tags: ['React Native', 'Firebase', 'Redux'],
+    githubUrl: 'https://github.com/votre-username/project3',
+    liveUrl: 'https://project3.com'
+  },
+  {
+    title: 'Application de Gestion',
+    description: "Une application web complète pour la gestion d'établissements scolaires.",
+    image: '/images/projets/edu03.png',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    githubUrl: 'https://github.com/votre-username/project1',
+    liveUrl: 'https://project1.com'
+  },
+  {
+    title: 'Plateforme E-learning',
+    description: 'Une plateforme de Gestion simplifiée',
+    image: '/images/projets/folio04.png',
+    tags: ['Next.js', 'TypeScript', 'PostgreSQL'],
+    githubUrl: 'https://github.com/votre-username/project2',
+    liveUrl: 'https://project2.com'
+  },
+  {
+    title: 'Application Grid',
+    description: 'Une compile de Starter pour vos projets',
+    image: '/images/projets/folio05.png',
     tags: ['React Native', 'Firebase', 'Redux'],
     githubUrl: 'https://github.com/votre-username/project3',
     liveUrl: 'https://project3.com'

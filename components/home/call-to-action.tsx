@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Motion from '@/components/ClientMotion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Mail, MessageSquare } from 'lucide-react';
+import Image from 'next/image'; // N'oubliez pas d'importer le composant Image
 
 export default function CallToAction() {
   return (
@@ -54,9 +55,67 @@ export default function CallToAction() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative h-[300px] hidden md:block"
               >
+                {/* Arrière-plans avec rotation */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl transform rotate-3" />
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl transform -rotate-3" />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl" />
+
+                {/* Conteneur principal pour les captures d'écran */}
+                <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                  {/* Capture d'écran 1 (centrale) */}
+                  <div className="absolute inset-0 flex items-center justify-center p-4">
+                  <Motion.div
+  initial={{ y: 20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.4 }}
+  className="absolute bottom-4 right-4 w-3/4 h-3/4 z-20 transform rotate-1"
+>
+
+                    <Image
+                      src="/images/projets/edu01.png" // Remplacez par votre chemin d'image
+                      alt="Projet 1"
+                      width={500}
+                      height={300}
+                      className="rounded-lg object-cover h-full w-full shadow-lg border border-primary/20"
+                    />
+                      </Motion.div>
+                  </div>
+
+                  {/* Capture d'écran 2 (décalée) */}
+                  <div className="absolute top-4 left-4 w-3/4 h-3/4 z-10 transform -rotate-2">
+                  <Motion.div
+  initial={{ y: 20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.4 }}
+  className="absolute bottom-4 right-4 w-3/4 h-3/4 z-20 transform rotate-1"
+>
+    <Image
+                      src="/images/projets/edu04.png" // Remplacez par votre chemin d'image
+                      alt="Projet 2"
+                      width={400}
+                      height={250}
+                      className="rounded-lg object-cover h-full w-full shadow-xl border-2 border-primary/30"
+                    />
+                      </Motion.div>
+                  </div>
+
+                  {/* Capture d'écran 3 (décalée) */}
+                  <div className="absolute bottom-4 right-4 w-3/4 h-3/4 z-20 transform rotate-1">
+                  <Motion.div
+  initial={{ y: 20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.4 }}
+  className="absolute bottom-4 right-4 w-3/4 h-3/4 z-20 transform rotate-1"
+>
+                    <Image
+                      src="/images/projets/edu05.png" // Remplacez par votre chemin d'image
+                      alt="Projet 3"
+                      width={400}
+                      height={250}
+                      className="rounded-lg object-cover h-full w-full shadow-2xl border-2 border-primary/40"
+                    />
+                    </Motion.div>
+                  </div>
+                </div>
               </Motion.div>
             </div>
           </div>

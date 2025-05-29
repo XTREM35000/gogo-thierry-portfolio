@@ -80,7 +80,7 @@ export default function Hero() {
           >
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               <Image
-                src="/images/profile/profile.jpg"
+                src="/images/profile/profile01.png"
                 alt="Profile picture"
                 fill
                 className="object-cover rounded-2xl shadow-2xl"
