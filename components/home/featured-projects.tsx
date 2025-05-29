@@ -11,6 +11,22 @@ import { ExternalLink, Github } from 'lucide-react';
 const featuredProjects = [
   {
     title: 'Application de Gestion',
+    description: "Une application web pour démarrer vos Stacks clés en main.",
+    image: '/images/projets/stack01.png',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    githubUrl: 'https://github.com/votre-username/project1',
+    liveUrl: 'https://project1.com'
+  },
+  {
+    title: 'Plateforme E-learning',
+    description: 'Une grille de ressources au choix pour vos projets',
+    image: '/images/projets/stack02.png',
+    tags: ['Next.js', 'TypeScript', 'PostgreSQL'],
+    githubUrl: 'https://github.com/votre-username/project2',
+    liveUrl: 'https://project2.com'
+  },
+  {
+    title: 'Application de Gestion',
     description: "Une application web complète pour la gestion d'établissements scolaires.",
     image: '/images/projets/edu01.png',
     tags: ['React', 'Node.js', 'MongoDB'],
@@ -51,7 +67,7 @@ const featuredProjects = [
   },
   {
     title: 'Application Grid',
-    description: 'Une compile de Starter pour vos projets',
+    description: 'Une application complète de Gestion Assurance Auto',
     image: '/images/projets/auto01.png',
     tags: ['React Native', 'Firebase', 'Redux'],
     githubUrl: 'https://github.com/votre-username/project3',
